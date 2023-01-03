@@ -1,0 +1,15 @@
+:root {
+    --very-light-grey: #C7C7C7;
+    --grenadier: #D63C00;
+    --christine: #E15E12;
+    --orange-peel: #FF9800;
+    --chestnut: #BD554F;
+    --dark: #232830;
+    --text-input-field: #F7F7F7;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Quicksand',
+        sans-serif;
+}
