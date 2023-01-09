@@ -26,7 +26,7 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 0 24px;
-
+    border-bottom: 1px solid var(--very-light-grey);
 }
 
 .nav-logo {
@@ -369,6 +369,8 @@ nav {
     object-fit: cover;
 }
 
+
+
 .shopping-cart p:nth-child(2) {
     color: var(--very-light-grey);
 }
@@ -388,6 +390,26 @@ nav {
 
 .shopping-cart figure {
     margin: 0;
+}
+
+.shopping-cart img {
+    width: 18px;
+    height: 18px;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 36px;
+
+}
+
+.title-container img {
+    transform: rotate(180deg);
+    width: 18px;
+    height: 18px;
+    margin-right: 14px;
 }
 
 .order {
@@ -454,7 +476,66 @@ nav {
     height: 16px;
 }
 
+.product-details {
+    width: 360px;
+    padding: 24px;
+    position: absolute;
+    right: 0;
+    box-sizing: border-box;
+}
 
+.product-details>img:nth-child(1) {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.product-details>img:nth-child(2) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.add-cart-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-cart-button img {
+    width: 40px;
+    height: 40px;
+}
+
+.product-details-info {
+    padding: 8px;
+}
+
+.product-details-info p:nth-child(1) {
+    font-weight: bold;
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.product-details-info p:nth-child(2) {
+    color: var(--very-light-grey);
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 36px;
+}
+
+.product-details-info p:nth-child(3) {
+    color: var(--dark);
+    font-size: var(--sm);
+    margin-top: 0;
+    margin-bottom: 36px;
+}
 
 /* Mobile view */
 @media (max-width: 640px) {
@@ -462,6 +543,17 @@ nav {
         display: block;
     }
 
+    .menu {
+        display: block;
+    }
+
+    .navbar-left ul {
+        display: none;
+    }
+
+    .navbar-email {
+        display: none;
+    }
 
     .mobile-menu {
         padding: 24px;
@@ -530,6 +622,10 @@ nav {
 
     }
 
+    .product-details {
+        width: 100%;
+
+    }
 
 
 }
