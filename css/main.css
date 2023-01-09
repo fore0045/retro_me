@@ -70,6 +70,7 @@ nav {
     color: var(--very-light-grey);
     font-size: var(--sm);
     margin-right: 12px;
+    cursor: pointer;
 }
 
 .navbar-shopping-cart {
@@ -98,6 +99,10 @@ nav {
 }
 
 .desktop-menu {
+    position: absolute;
+    background: var(--white);
+    top: 60px;
+    right: 60px;
     width: 100px;
     height: auto;
     border: 1px solid var(--very-light-grey);
@@ -138,6 +143,9 @@ nav {
     display: inline-block;
 }
 
+.inactive {
+    display: none;
+}
 
 
 .login {
@@ -553,6 +561,7 @@ nav {
 
     .navbar-email {
         display: none;
+        cursor: pointer;
     }
 
     .mobile-menu {
